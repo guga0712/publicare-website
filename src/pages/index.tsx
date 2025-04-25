@@ -1,10 +1,12 @@
-import { Heading, Text } from "@chakra-ui/react";
+import NavBar from "../components/NavBar";
+import MainSection from "../components/Home";
 
 export default function Home() {
   return (
     <>
-      <Heading size="5xl">Publicare</Heading>
-      <Text>Teste</Text>
+      <MainSection>
+        <NavBar />
+      </MainSection>
     </>
   );
 }

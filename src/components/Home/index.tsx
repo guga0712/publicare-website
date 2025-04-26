@@ -1,18 +1,19 @@
 import { Flex } from "@chakra-ui/react";
-import React, { JSX } from "react";
+import React, { ReactNode } from "react";
 
 interface IMainSectionProps {
-  children: JSX.Element;
+  children: ReactNode;
 }
 
 export default function MainSection({ children }: IMainSectionProps) {
   return (
     <Flex
       backgroundImage="url('/fundo.png')"
+      backgroundRepeat={{ base: "repeat", md: "round" }}
       width={"100%"}
       height={"100vh"}
       flexDir={"column"}
-      px={{ md: 0, lg: 36 }}
+      px={{ md: 0, lg: 48 }}
       py={{ md: 0, lg: 8 }}
     >
       {children}

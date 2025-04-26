@@ -34,7 +34,7 @@ export default function WithSubnavigation() {
         minH="60px"
         align="center"
         justify="space-between"
-        px={4}
+        px={{ base: 4, md: 0 }}
       >
         {/* Logo */}
         <Flex align="center">
@@ -167,8 +167,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
         <Flex
           transition="all .3s ease"
           transform="translateX(-10px)"
-          opacity={0}
-          _groupHover={{ opacity: 1, transform: "translateX(0)" }}
+          _groupHover={{ transform: "translateX(0)" }}
           justify="flex-end"
           align="center"
           flex={1}
@@ -245,7 +244,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         )}
       </Box>
 
-      <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
+      <Collapse in={isOpen} style={{ marginTop: "0!important" }} animateOpacity>
         <Stack
           mt={2}
           pl={4}

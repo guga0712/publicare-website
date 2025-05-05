@@ -13,7 +13,6 @@ export default function MainSection({ children }: IMainSectionProps) {
       width={"100%"}
       height={{ base: "auto", md: "100vh" }}
       flexDir={"column"}
-      px={{ md: 0, lg: 48 }}
       py={{ md: 0, lg: 8 }}
     >
       {children}

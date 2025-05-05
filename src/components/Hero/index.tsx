@@ -8,7 +8,12 @@ export default function Hero() {
       height="100%"
       width="100%"
       align="center"
-      px={{ base: 6, md: 0 }}
+      px={{
+        base: 6,
+        md: `var(--margin-medium)`,
+        lg: `var(--margin-large)`,
+        xl: `var(--margin-xlarge)`,
+      }}
       py={20}
       gap={{ base: 20, md: 0 }}
     >

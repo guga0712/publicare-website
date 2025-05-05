@@ -9,11 +9,22 @@ export default function HowItWorks() {
       height={{ base: "auto", md: "70vh" }}
       width="100%"
       align="center"
-      px={{ base: 6, md: 0 }}
+      px={{
+        base: 6,
+        md: `var(--margin-medium)`,
+        lg: `var(--margin-large)`,
+        xl: `var(--margin-xlarge)`,
+      }}
       py={12}
       gap={{ base: 10, md: 20 }}
       justifyContent="space-between"
     >
+      <Image
+        src="https://placehold.co/500x500"
+        alt="Publicare"
+        width={{ base: "100%", md: "500px" }}
+        height={{ base: "auto", md: "500px" }}
+      />
       <Flex
         backgroundColor="white"
         borderRadius="2xl"
@@ -40,12 +51,6 @@ export default function HowItWorks() {
           </Text>
         </Text>
       </Flex>
-      <Image
-        src="https://placehold.co/500x500"
-        alt="Publicare"
-        width={{ base: "100%", md: "500px" }}
-        height={{ base: "auto", md: "500px" }}
-      />
     </Flex>
   );
 }

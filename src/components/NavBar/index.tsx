@@ -34,7 +34,12 @@ export default function WithSubnavigation() {
         minH="60px"
         align="center"
         justify="space-between"
-        px={{ base: 4, md: 0 }}
+        px={{
+          base: 6,
+          md: `var(--margin-medium)`,
+          lg: `var(--margin-large)`,
+          xl: `var(--margin-xlarge)`,
+        }}
       >
         {/* Logo */}
         <Flex align="center">
@@ -45,6 +50,7 @@ export default function WithSubnavigation() {
         <Flex display={{ base: "flex", md: "none" }} align="center" gap={3}>
           <IconButton
             onClick={onToggle}
+            _hover={{ backgroundColor: "transparent" }}
             icon={
               isOpen ? (
                 <CloseIcon w={3} h={3} color="white" />

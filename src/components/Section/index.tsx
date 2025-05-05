@@ -11,7 +11,6 @@ export default function Section({
     <Flex
       width={"100%"}
       flexDir={"column"}
-      px={{ md: 0, lg: 48 }}
       py={{ md: 0, lg: 8 }}
       bgColor={color}
     >

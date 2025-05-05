@@ -6,7 +6,7 @@ export default function HowItWorks() {
     <Flex
       flexDir={{ base: "column", md: "row" }}
       overflow="hidden"
-      height="70vh"
+      height={{ base: "auto", md: "70vh" }}
       width="100%"
       align="center"
       px={{ base: 6, md: 0 }}
@@ -34,13 +34,18 @@ export default function HowItWorks() {
           é uma plataforma feita para você, publicitário, que busca um suporte
           psicológico com quem realmente entende os desafios da área. Nós
           conectamos você a psicólogos especializados, que já ajudaram outros
-          profissionais do mercado criativo a encontrar
+          profissionais do mercado criativo a encontrar{" "}
           <Text as="strong" color="var(--roxo-escuro)">
             equilíbrio entre produtividade e bem-estar.
           </Text>
         </Text>
       </Flex>
-      <Image src="https://placehold.co/200x200" alt="Publicare" />
+      <Image
+        src="https://placehold.co/500x500"
+        alt="Publicare"
+        width={{ base: "100%", md: "500px" }}
+        height={{ base: "auto", md: "500px" }}
+      />
     </Flex>
   );
 }

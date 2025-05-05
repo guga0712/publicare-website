@@ -5,12 +5,12 @@ export default function Hero() {
     <Flex
       flexDir={{ base: "column", md: "row" }}
       overflow="hidden"
-      height="70vh"
+      height="100%"
       width="100%"
       align="center"
       px={{ base: 6, md: 0 }}
-      py={12}
-      gap={{ base: 10, md: 0 }}
+      py={20}
+      gap={{ base: 20, md: 0 }}
     >
       <Flex flexDir="column" gap={8} flex={1}>
         <Heading
@@ -36,13 +36,11 @@ export default function Hero() {
           <Text as="span">a lidar com os desafios do dia a dia</Text>
         </Text>
       </Flex>
-
       <Image
-        src="/mao-hero.png"
+        src="https://placehold.co/500x500"
         alt="hero"
-        width={{ base: "80%", md: "50%" }}
-        maxW="1000px"
-        flex={1}
+        width={{ base: "100%", md: "500px" }}
+        height={{ base: "auto", md: "500px" }}
       />
     </Flex>
   );

@@ -14,25 +14,26 @@ export default function Hero() {
     >
       <Flex flexDir="column" gap={8} flex={1}>
         <Heading
-          fontSize="clamp(2.5rem, 4vw, 5rem)"
+          fontSize="clamp(2rem, 3vw, 4.5rem)"
           fontWeight="bold"
-          whiteSpace="pre"
+          whiteSpace={{ base: "pre-wrap", md: "pre" }}
           lineHeight="1.2"
+          textAlign={{ base: "center", md: "left" }}
         >
-          {`Bem-vindo ao seu\nponto de equilíbrio.`}
+          {`Bem-vindo ao seu \nponto de equilíbrio.`}
         </Heading>
 
         <Text
-          fontSize="clamp(1.2rem, 2.5vw, 2rem)"
-          whiteSpace="pre-line"
-          lineHeight="1.6"
+          fontSize="clamp(1.2rem, 2vw, 2rem)"
+          whiteSpace={{ base: "pre-wrap", md: "pre" }}
+          lineHeight="1.2"
           textAlign={{ base: "center", md: "left" }}
         >
-          {`Conecte-se a psicólogos que já\n`}
-          <Text as="span" fontWeight="bold" display="inline">
+          <Text as="span">Conecte-se a psicólogos que já</Text>
+          <Text as="span" fontWeight="bold" display="block" my={2}>
             ajudaram publicitários como você
           </Text>
-          {`\na lidar com os desafios do dia a dia`}
+          <Text as="span">a lidar com os desafios do dia a dia</Text>
         </Text>
       </Flex>
 

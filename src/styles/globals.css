@@ -3,7 +3,9 @@
 :root{
   --azul: #AEC7E9;
   --roxo: #BFA4F8;
-  --rosa: #F2C6F0
+  --rosa: #F2C6F0;
+  --roxo-escuro: #b490fd;
+  --ciano: #00c4cc;
 }
 
 html,
@@ -14,6 +16,7 @@ body {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 * {
@@ -29,4 +32,5 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 

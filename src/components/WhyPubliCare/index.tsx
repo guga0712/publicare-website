@@ -1,5 +1,13 @@
-import { Flex, Image } from "@chakra-ui/react";
+import {
+  Flex,
+  Heading,
+  Image,
+  ListIcon,
+  ListItem,
+  UnorderedList,
+} from "@chakra-ui/react";
 import Section from "../Section";
+import { CircleCheckBig, Users } from "lucide-react";
 
 export default function WhyPubliCare() {
   return (
@@ -20,8 +28,36 @@ export default function WhyPubliCare() {
         gap={{ base: 10, md: 20 }}
         justifyContent="space-between"
       >
-        <Flex></Flex>
-        <Image src="https://placehold.co/500x500" alt="Publicare" />
+        <Flex
+          backgroundColor="rgba(255, 255, 255, 0.1)"
+          borderRadius="2xl"
+          p={10}
+          flex={1}
+          flexDir="column"
+          gap={4}
+          maxW="1000px"
+        >
+          <Flex alignItems="center" gap={4}>
+            <Users size={40} />
+            <Heading>Por que Publicare?</Heading>
+          </Flex>
+          <UnorderedList fontSize={20} styleType="none">
+            <ListItem>
+              <ListIcon as={CircleCheckBig} />
+              Psicólogos que conhecem os desafios da publicidade.
+            </ListItem>
+            <ListItem>
+              <ListIcon as={CircleCheckBig} />
+              Veja os perfis, conheça as especialidades e escolha quem faz
+              sentido para você.
+            </ListItem>
+            <ListItem>
+              <ListIcon as={CircleCheckBig} />
+              Atendimento online, acessível e prático!
+            </ListItem>
+          </UnorderedList>
+        </Flex>
+        <Image src="/mockups/1.png" alt="Publicare" maxW="300px" />
       </Flex>
     </Section>
   );

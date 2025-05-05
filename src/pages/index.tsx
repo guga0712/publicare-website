@@ -15,6 +15,7 @@ export default function Home() {
       <HowItWorks />
       <SectionDivider src="/wave2.svg" />
       <WhyPubliCare />
+      <SectionDivider src="/wave4.svg" />
     </>
   );
 }

@@ -34,6 +34,7 @@ export default function HowItWorks() {
           flex={1}
           flexDir="column"
           gap={4}
+          maxW="1000px"
         >
           <Flex alignItems="center" gap={4}>
             <Users size={40} color="var(--roxo-escuro)" />

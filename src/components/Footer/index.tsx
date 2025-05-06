@@ -21,19 +21,19 @@ export default function Footer() {
       justifyContent="space-between"
     >
       <Flex flexDir="column" gap={8} align="center">
-        <Image src="/logo-2.png" alt="Logo" width={120} />
+        <Image src="/logo-3.png" alt="Logo" width={120} />
         <HStack spacing={8}>
-          <Box backgroundColor="var(--rosa-escuro)" borderRadius="full" p={3}>
+          <Box backgroundColor="var(--roxo)" borderRadius="full" p={3}>
             <Instagram size={24} color="white" />
           </Box>
-          <Box backgroundColor="var(--rosa-escuro)" borderRadius="full" p={3}>
+          <Box backgroundColor="var(--roxo)" borderRadius="full" p={3}>
             <Facebook size={24} color="white" />
           </Box>
-          <Box backgroundColor="var(--rosa-escuro)" borderRadius="full" p={3}>
+          <Box backgroundColor="var(--roxo)" borderRadius="full" p={3}>
             <Youtube size={24} color="white" />
           </Box>
         </HStack>
-        <Text color="var(--rosa-escuro)" as="strong">
+        <Text color="var(--roxo)" as="strong">
           ©2025 PubliCare BR
         </Text>
       </Flex>
@@ -44,19 +44,19 @@ export default function Footer() {
         textAlign="center"
         marginLeft={{ base: 0, md: "10px" }}
       >
-        <Text as="strong" color="var(--rosa-escuro)">
+        <Text as="strong" color="var(--roxo)">
           Mapa do Site
         </Text>
         <VStack gap={1}>
-          <Text color="var(--rosa-escuro)">Política de Privacidade</Text>
-          <Text color="var(--rosa-escuro)">Termos de Uso</Text>
-          <Text color="var(--rosa-escuro)">Contato</Text>
+          <Text color="var(--roxo)">Política de Privacidade</Text>
+          <Text color="var(--roxo)">Termos de Uso</Text>
+          <Text color="var(--roxo)">Contato</Text>
         </VStack>
       </Flex>
       <Flex flexDir="column" gap={8} width={{ base: "100%", md: "200px" }}>
         <Flex
           as="button"
-          backgroundColor="var(--rosa-escuro)"
+          backgroundColor="var(--roxo)"
           gap={2}
           borderRadius="full"
           py={4}
@@ -72,7 +72,7 @@ export default function Footer() {
         </Flex>
         <Flex
           as="button"
-          backgroundColor="var(--rosa-escuro)"
+          backgroundColor="var(--roxo)"
           gap={2}
           borderRadius="full"
           py={4}

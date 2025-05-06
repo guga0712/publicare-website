@@ -22,7 +22,7 @@ export default function Home() {
       <BurnoutSection />
       <SectionDivider src="/wave5.png" />
       <RateUs />
-      <SectionDivider src="/wave6.png" />
+      <SectionDivider src="/wave7.png" />
       <Footer />
     </>
   );

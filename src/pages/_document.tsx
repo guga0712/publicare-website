@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <meta name="theme-color" content="#7B4AE2" />
+      <meta name="theme-color" content="#BFA4F8" />
       <body>
         <Main />
         <NextScript />

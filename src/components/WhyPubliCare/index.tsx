@@ -39,7 +39,9 @@ export default function WhyPubliCare() {
         >
           <Flex alignItems="center" gap={4}>
             <Users size={40} />
-            <Heading>Por que Publicare?</Heading>
+            <Heading fontSize={{ base: 24, md: 40 }}>
+              Por que Publicare?
+            </Heading>
           </Flex>
           <UnorderedList fontSize={20} styleType="none">
             <ListItem>

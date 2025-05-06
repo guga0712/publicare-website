@@ -32,7 +32,9 @@ export default function HowItWorks() {
         >
           <Flex alignItems="center" gap={4}>
             <Users size={40} color="var(--roxo-escuro)" />
-            <Heading color="var(--roxo-escuro)">Como funciona?</Heading>
+            <Heading fontSize={{ base: 24, md: 40 }} color="var(--roxo-escuro)">
+              Como funciona?
+            </Heading>
           </Flex>
           <Text color="var(--roxo-escuro)">
             A{" "}

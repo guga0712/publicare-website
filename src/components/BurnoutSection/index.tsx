@@ -31,10 +31,10 @@ export default function BurnoutSection() {
           backgroundColor="white"
           color="var(--rosa-escuro)"
           borderRadius="full"
-          fontSize={{ base: 20, md: 25 }}
+          fontSize={{ base: 16, md: 25 }}
           fontWeight="bold"
-          paddingX={12}
-          paddingY={8}
+          paddingX={{ base: 8, md: 12 }}
+          paddingY={{ base: 6, md: 8 }}
           _hover={{ backgroundColor: "none" }}
           _active={{ backgroundColor: "none" }}
         >

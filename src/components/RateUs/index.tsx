@@ -22,7 +22,7 @@ export default function RateUs() {
         justifyContent="center"
       >
         <Text
-          fontSize={{ base: 32, md: 42 }}
+          fontSize={{ base: 26, md: 42 }}
           color="var(--rosa-escuro)"
           lineHeight={1}
           textAlign="center"
@@ -41,10 +41,10 @@ export default function RateUs() {
           backgroundColor="var(--rosa-escuro)"
           color="white"
           borderRadius="full"
-          fontSize={{ base: 20, md: 25 }}
+          fontSize={{ base: 16, md: 25 }}
           fontWeight="bold"
-          paddingX={12}
-          paddingY={8}
+          paddingX={{ base: 8, md: 12 }}
+          paddingY={{ base: 6, md: 8 }}
           _hover={{ backgroundColor: "none" }}
           _active={{ backgroundColor: "none" }}
         >

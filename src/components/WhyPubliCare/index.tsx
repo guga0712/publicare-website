@@ -39,11 +39,15 @@ export default function WhyPubliCare() {
         >
           <Flex alignItems="center" gap={4}>
             <Users size={40} />
-            <Heading fontSize={{ base: 24, md: 40 }}>
+            <Heading fontSize={{ base: 20, md: 40 }}>
               Por que Publicare?
             </Heading>
           </Flex>
-          <UnorderedList fontSize={20} styleType="none">
+          <UnorderedList
+            fontSize={{ base: 16, md: 20 }}
+            styleType="none"
+            spacing={4}
+          >
             <ListItem>
               <ListIcon as={CircleCheckBig} />
               Psicólogos que conhecem os desafios da publicidade.

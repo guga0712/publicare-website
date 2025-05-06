@@ -1,11 +1,11 @@
-import { Flex } from "@chakra-ui/react";
+import { Button, Flex, Heading, Text } from "@chakra-ui/react";
 import Section from "../Section";
 
 export default function BurnoutSection() {
   return (
-    <Section color="var(--ciano)">
+    <Section color="var(--rosa-escuro)">
       <Flex
-        flexDir={{ base: "column", md: "row" }}
+        flexDir={{ base: "column" }}
         overflow="hidden"
         height={{ base: "auto", md: "60vh" }}
         width="100%"
@@ -16,10 +16,31 @@ export default function BurnoutSection() {
           lg: `var(--margin-large)`,
           xl: `var(--margin-xlarge)`,
         }}
-        py={12}
-        gap={{ base: 10, md: 20 }}
-        justifyContent="space-between"
-      ></Flex>
+        py={{ base: 36, md: 12 }}
+        gap={{ base: 8, md: 4 }}
+        justifyContent="center"
+        textAlign="center"
+      >
+        <Heading fontSize={{ base: 42, md: 72 }}>
+          Burnout não é briefing.
+        </Heading>
+        <Text fontSize={20}>
+          Cuide da sua mente com quem entende os desafios da área.
+        </Text>
+        <Button
+          backgroundColor="white"
+          color="var(--rosa-escuro)"
+          borderRadius="full"
+          fontSize={{ base: 20, md: 25 }}
+          fontWeight="bold"
+          paddingX={12}
+          paddingY={8}
+          _hover={{ backgroundColor: "none" }}
+          _active={{ backgroundColor: "none" }}
+        >
+          AGENDE SUA CONSULTA AGORA
+        </Button>
+      </Flex>
     </Section>
   );
 }

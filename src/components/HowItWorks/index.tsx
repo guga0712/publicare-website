@@ -21,12 +21,6 @@ export default function HowItWorks() {
         gap={{ base: 10, md: 20 }}
         justifyContent="space-between"
       >
-        <Image
-          src="https://placehold.co/500x500"
-          alt="Publicare"
-          width={{ base: "100%", md: "500px" }}
-          height={{ base: "auto", md: "500px" }}
-        />
         <Flex
           backgroundColor="white"
           borderRadius="2xl"
@@ -54,6 +48,12 @@ export default function HowItWorks() {
             </Text>
           </Text>
         </Flex>
+        <Image
+          src="https://placehold.co/500x500"
+          alt="Publicare"
+          width={{ base: "100%", md: "500px" }}
+          height={{ base: "auto", md: "500px" }}
+        />
       </Flex>
     </Section>
   );

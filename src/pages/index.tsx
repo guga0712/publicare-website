@@ -15,11 +15,11 @@ export default function Home() {
         <Hero />
       </MainSection>
       <HowItWorks />
-      <SectionDivider src="/wave2.svg" />
+      <SectionDivider src="/wave2.png" />
       <WhyPubliCare />
-      <SectionDivider src="/wave4.svg" />
+      <SectionDivider src="/wave4.png" />
       <BurnoutSection />
-      <SectionDivider src="/wave5.svg" />
+      <SectionDivider src="/wave5.png" />
       <RateUs />
     </>
   );

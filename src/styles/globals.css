@@ -13,7 +13,12 @@
   --margin-xlarge: 14rem;
 }
 
-
+/* Força o modo claro em dispositivos móveis */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+  }
+}
 
 body {
   -webkit-font-smoothing: antialiased;

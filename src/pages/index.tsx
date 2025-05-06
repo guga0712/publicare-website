@@ -6,6 +6,7 @@ import WhyPubliCare from "../components/WhyPubliCare";
 import SectionDivider from "../components/SectionDivider";
 import BurnoutSection from "../components/BurnoutSection";
 import RateUs from "../components/RateUs";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -21,6 +22,8 @@ export default function Home() {
       <BurnoutSection />
       <SectionDivider src="/wave5.png" />
       <RateUs />
+      <SectionDivider src="/wave6.png" />
+      <Footer />
     </>
   );
 }

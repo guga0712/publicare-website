@@ -6,6 +6,7 @@ interface PsychologistCardProps {
   price: number;
   type: string;
   image: string;
+  crp: string | number;
 }
 
 export default function PsychologistCard({
@@ -14,27 +15,25 @@ export default function PsychologistCard({
   price,
   type,
   image,
+  crp,
 }: PsychologistCardProps) {
   return (
     <Box
       backgroundColor="var(--rosa-escuro)"
       borderRadius="2xl"
-      py={4}
-      px={6}
+      p={6}
       display="flex"
       flexDir="column"
       alignItems="center"
       maxW="300px"
     >
-      <Image src={image} alt="Logo" width="100%" />
-      <Flex flexDir="column" my={4} textAlign="left">
+      <Image src={image} alt="Logo" width="100%" borderRadius={8} />
+      <Flex flexDir="column" my={4} textAlign="left" w="100%">
+        <Text as="strong" fontSize={24}>
+          {name}
+        </Text>
         <Text>
-          <Text as="strong" fontSize={24}>
-            {name}
-          </Text>
-          <Text>
-            <Text as="strong">CRP: </Text> 06/119292
-          </Text>
+          <Text as="strong">CRP: </Text> {crp}
         </Text>
         <Text>
           <Text as="strong">Especialidade: </Text>

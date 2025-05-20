@@ -23,13 +23,32 @@ export default function RateUs() {
         <Heading color="var(--rosa-escuro)">
           Agende uma consulta com um psicólogo da PubliCare
         </Heading>
-        <PsychologistCard
-          name="Diego"
-          specialty="Psicoterapia"
-          image="/diego.jpg"
-          price={100}
-          type="Online"
-        />
+        <Flex flexDir={{ base: "column", md: "row" }} gap={4}>
+          <PsychologistCard
+            name="Diego"
+            specialty="Psicoterapia"
+            image="/diego.jpg"
+            price={100}
+            type="Online"
+            crp="06/119292"
+          />
+          <PsychologistCard
+            name="Tatiana"
+            specialty="Psicoterapia"
+            image="/tatiana.png"
+            price={100}
+            type="Híbrido"
+            crp="85341"
+          />
+          <PsychologistCard
+            name="Brayan"
+            specialty="Psicoterapia"
+            image="/tatiana.png"
+            price={100}
+            type="Online"
+            crp="07/38282"
+          />
+        </Flex>
       </Flex>
     </Section>
   );

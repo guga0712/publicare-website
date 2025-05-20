@@ -38,7 +38,7 @@ export default function Hero() {
           <Text as="span" fontWeight="bold" display="block" my={2}>
             ajudaram publicitários como você
           </Text>
-          <Text as="span">a lidar com os desafios do dia a dia</Text>
+          <Text as="span">a lidar com os desafios do dia a dia.</Text>
         </Text>
       </Flex>
       <Image

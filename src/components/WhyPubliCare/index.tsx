@@ -40,7 +40,7 @@ export default function WhyPubliCare() {
           <Flex alignItems="center" gap={4}>
             <Users size={40} />
             <Heading fontSize={{ base: 20, md: 40 }}>
-              Por que Publicare?
+              Por que escolher a PubliCare?
             </Heading>
           </Flex>
           <UnorderedList

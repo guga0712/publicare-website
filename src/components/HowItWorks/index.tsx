@@ -39,7 +39,7 @@ export default function HowItWorks() {
           <Text color="var(--roxo-escuro)">
             A{" "}
             <Text as="strong" color="var(--roxo-escuro)">
-              Publicare
+              PubliCare
             </Text>{" "}
             é uma plataforma feita para você, publicitário, que busca um suporte
             psicológico com quem realmente entende os desafios da área. Nós

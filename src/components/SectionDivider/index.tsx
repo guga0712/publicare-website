@@ -1,7 +1,13 @@
 import React from "react";
 import { Image } from "@chakra-ui/react";
 
-export default function SectionDivider({ src }: { src: string }) {
+export default function SectionDivider({
+  src,
+  rotate,
+}: {
+  src: string;
+  rotate?: string;
+}) {
   return (
     <Image
       src={src}
@@ -10,6 +16,7 @@ export default function SectionDivider({ src }: { src: string }) {
       m={0}
       p={0}
       objectFit="cover"
+      transform={rotate}
     />
   );
 }

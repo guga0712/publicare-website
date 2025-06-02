@@ -7,6 +7,7 @@
   --roxo-escuro: #b490fd;
   --ciano: #9fd3e8;
   --rosa-escuro: #f4b2cb;
+  --rosa-claro: #fff3fe;
   
   --margin-medium: 4rem;
   --margin-large: 8rem;
@@ -31,7 +32,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: Poppins !important;
-  /* opacity: 1 !important; */
   color: white;
 }
 

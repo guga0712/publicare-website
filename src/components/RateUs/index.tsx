@@ -48,6 +48,14 @@ export default function RateUs() {
             type="Online"
             crp="07/38282"
           />
+          <PsychologistCard
+            name="Vitória"
+            specialty="Psicoterapia"
+            image="/tatiana.png"
+            price={100}
+            type="Online"
+            crp="07/38282"
+          />
         </Flex>
       </Flex>
     </Section>

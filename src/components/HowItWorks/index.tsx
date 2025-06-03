@@ -7,7 +7,7 @@ export default function HowItWorks() {
   return (
     <Section color="var(--roxo-escuro)">
       <Flex
-        flexDir={{ base: "column-reverse", md: "row-reverse" }}
+        flexDir={{ base: "column", md: "row-reverse" }}
         overflow="hidden"
         height={{ base: "auto", md: "60vh" }}
         width="100%"

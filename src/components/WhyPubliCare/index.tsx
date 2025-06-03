@@ -1,13 +1,7 @@
-import {
-  Flex,
-  Heading,
-  Image,
-  ListIcon,
-  ListItem,
-  UnorderedList,
-} from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
 import Section from "../Section";
-import { CircleCheckBig, Users } from "lucide-react";
+import CardWhy from "../CardWhy";
+import Images from "../Images";
 
 export default function WhyPubliCare() {
   return (
@@ -15,7 +9,7 @@ export default function WhyPubliCare() {
       <Flex
         flexDir={{ base: "column", md: "row" }}
         overflow="hidden"
-        height={{ base: "auto", md: "60vh" }}
+        height={{ base: "auto", md: "70vh" }}
         width="100%"
         align="center"
         px={{
@@ -29,21 +23,17 @@ export default function WhyPubliCare() {
         justifyContent="space-between"
       >
         <Flex
-          backgroundColor="rgba(255, 255, 255, 0.1)"
           borderRadius="2xl"
-          p={10}
           flex={1}
           flexDir="column"
           gap={4}
           maxW="1000px"
+          alignItems="center"
         >
-          <Flex alignItems="center" gap={4}>
-            <Users size={40} />
-            <Heading fontSize={{ base: 20, md: 40 }}>
-              Por que escolher a PubliCare?
-            </Heading>
-          </Flex>
-          <UnorderedList
+          <Heading fontSize={{ base: 20, md: 40 }} textAlign="center">
+            Por que escolher a PubliCare?
+          </Heading>
+          {/* <UnorderedList
             fontSize={{ base: 16, md: 20 }}
             styleType="none"
             spacing={4}
@@ -61,9 +51,24 @@ export default function WhyPubliCare() {
               <ListIcon as={CircleCheckBig} />
               Atendimento online, acessível e prático!
             </ListItem>
-          </UnorderedList>
+          </UnorderedList> */}
+          <Flex gap={4} flexDir={{ base: "column", md: "row" }}>
+            <CardWhy
+              icon="Users"
+              description="Psicólogos que conhecem os desafios da publicidade."
+            />
+            <CardWhy
+              icon="Share2"
+              description="Veja os perfis, conheça as especialidades e escolha quem faz
+              sentido para você."
+            />
+            <CardWhy
+              icon="Laptop"
+              description="Atendimento online, acessível e prático!"
+            />
+          </Flex>
         </Flex>
-        <Image src="/mockups/1.png" alt="Publicare" maxW="300px" />
+        <Images src="/hands.png" />
       </Flex>
     </Section>
   );

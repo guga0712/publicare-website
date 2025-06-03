@@ -7,8 +7,16 @@ import HowItWorksPsico from "../../components/HowItWorksPsico";
 import BePartOfPsico from "../../components/BePartOfPsico";
 import Footer from "../../components/Footer";
 import FAQ from "../../components/FAQ";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Psicologos() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <>
       <MainSection color="var(--ciano)">

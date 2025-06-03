@@ -27,6 +27,8 @@ export default function FAQ() {
         py={{ base: 36, md: 12 }}
         gap={{ base: 12, md: 12 }}
         justifyContent="center"
+        data-aos="fade-up"
+        data-aos-delay="200"
       >
         <Heading color="var(--rosa-escuro)">Perguntas Frequentes</Heading>
         {/* <Flex flexDir={{ base: "column", md: "row" }} gap={4}></Flex> */}

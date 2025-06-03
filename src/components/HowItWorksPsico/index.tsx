@@ -27,6 +27,8 @@ export default function HowItWorksPsico() {
         py={12}
         gap={{ base: 10, md: 20 }}
         justifyContent="space-between"
+        data-aos="fade-up"
+        data-aos-delay="200"
       >
         <Flex
           backgroundColor="white"
@@ -76,6 +78,8 @@ export default function HowItWorksPsico() {
         py={10}
         gap={{ base: 10, md: 20 }}
         justifyContent="space-between"
+        data-aos="fade-up"
+        data-aos-delay="400"
       >
         <Flex
           backgroundColor="white"

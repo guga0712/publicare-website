@@ -21,6 +21,8 @@ export default function HowItWorks() {
         py={12}
         gap={{ base: 10, md: 20 }}
         justifyContent="space-between"
+        data-aos="fade-up"
+        data-aos-delay="200"
       >
         <Flex
           backgroundColor="white"

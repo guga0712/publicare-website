@@ -21,6 +21,8 @@ export default function WhyPubliCare() {
         py={12}
         gap={{ base: 10, md: 20 }}
         justifyContent="space-between"
+        data-aos="fade-up"
+        data-aos-delay="200"
       >
         <Flex
           borderRadius="2xl"
@@ -54,15 +56,18 @@ export default function WhyPubliCare() {
           </UnorderedList> */}
           <Flex gap={4} flexDir={{ base: "column", md: "row" }}>
             <CardWhy
+              delay={400}
               icon="Users"
               description="Psicólogos que conhecem os desafios da publicidade."
             />
             <CardWhy
+              delay={800}
               icon="Share2"
               description="Veja os perfis, conheça as especialidades e escolha quem faz
               sentido para você."
             />
             <CardWhy
+              delay={1200}
               icon="Laptop"
               description="Atendimento online, acessível e prático!"
             />

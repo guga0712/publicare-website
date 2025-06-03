@@ -20,6 +20,8 @@ export default function BurnoutSection() {
         gap={{ base: 8, md: 4 }}
         justifyContent="center"
         textAlign="center"
+        data-aos="fade-up"
+        data-aos-delay="200"
       >
         <Heading fontSize={{ base: 42, md: 72 }}>
           Burnout não é briefing.

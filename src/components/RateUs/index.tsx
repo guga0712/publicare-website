@@ -19,6 +19,8 @@ export default function RateUs() {
         py={{ base: 36, md: 12 }}
         gap={{ base: 12, md: 12 }}
         justifyContent="center"
+        data-aos="fade-up"
+        data-aos-delay="200"
       >
         <Heading color="var(--rosa-escuro)">
           Agende uma consulta com um psicólogo da PubliCare

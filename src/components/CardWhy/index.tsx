@@ -5,9 +5,10 @@ import { LucideIcon } from "lucide-react";
 interface CardWhyProps {
   icon: keyof typeof Icons;
   description: string;
+  delay?: number;
 }
 
-export default function CardWhy({ icon, description }: CardWhyProps) {
+export default function CardWhy({ icon, description, delay }: CardWhyProps) {
   const SelectedIcon = Icons[icon] as LucideIcon;
 
   return (
@@ -20,6 +21,8 @@ export default function CardWhy({ icon, description }: CardWhyProps) {
       gap={4}
       maxW={{ base: "100%", md: "300px" }}
       alignItems="center"
+      data-aos="fade-up"
+      data-aos-delay={delay}
     >
       {SelectedIcon && <SelectedIcon size={50} />}
       <Text fontWeight="500">{description}</Text>

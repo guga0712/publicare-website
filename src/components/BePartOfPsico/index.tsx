@@ -38,6 +38,10 @@ export default function BePartOfPsico() {
           paddingY={{ base: 6, md: 8 }}
           _hover={{ backgroundColor: "none" }}
           _active={{ backgroundColor: "none" }}
+          as="a"
+          href="https://forms.gle/WGnNUyPi1cvhz4M17"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           QUERO FAZER PARTE DA PUBLICARE
         </Button>

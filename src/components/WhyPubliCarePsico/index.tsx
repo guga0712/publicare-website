@@ -31,7 +31,7 @@ export default function WhyPubliCarePsico() {
         <Flex
           backgroundColor="rgba(255, 255, 255, 0.1)"
           borderRadius="2xl"
-          p={10}
+          p={{ base: 6, md: 10 }}
           flex={1}
           flexDir="column"
           gap={4}

@@ -33,15 +33,14 @@ export default function FAQ() {
         <Accordion
           allowMultiple
           width={{ base: "100%", md: "50%" }}
-          allowToggle
           border="none"
         >
           <AccordionItem>
             <h2>
               <AccordionButton
-                _hover={{ backgroundColor: "var(--rosa-claro)" }}
+                _hover={{ backgroundColor: "none" }}
                 borderBottom="1px solid"
-                borderColor="var(--rosa-escuro)"
+                borderColor="var(--rosa-claro)"
               >
                 <Box
                   as="span"
@@ -70,9 +69,9 @@ export default function FAQ() {
           <AccordionItem>
             <h2>
               <AccordionButton
-                _hover={{ backgroundColor: "var(--rosa-claro)" }}
+                _hover={{ backgroundColor: "none" }}
                 borderBottom="1px solid"
-                borderColor="var(--rosa-escuro)"
+                borderColor="var(--rosa-claro)"
               >
                 <Box
                   as="span"
@@ -98,9 +97,9 @@ export default function FAQ() {
           <AccordionItem>
             <h2>
               <AccordionButton
-                _hover={{ backgroundColor: "var(--rosa-claro)" }}
+                _hover={{ backgroundColor: "none" }}
                 borderBottom="1px solid"
-                borderColor="var(--rosa-escuro)"
+                borderColor="var(--rosa-claro)"
               >
                 <Box
                   as="span"
@@ -127,9 +126,9 @@ export default function FAQ() {
           <AccordionItem>
             <h2>
               <AccordionButton
-                _hover={{ backgroundColor: "var(--rosa-claro)" }}
+                _hover={{ backgroundColor: "none" }}
                 borderBottom="1px solid"
-                borderColor="var(--rosa-escuro)"
+                borderColor="var(--rosa-claro)"
               >
                 <Box
                   as="span"
@@ -155,9 +154,7 @@ export default function FAQ() {
           </AccordionItem>
           <AccordionItem>
             <h2>
-              <AccordionButton
-                _hover={{ backgroundColor: "var(--rosa-claro)" }}
-              >
+              <AccordionButton _hover={{ backgroundColor: "none" }}>
                 <Box
                   as="span"
                   flex="1"

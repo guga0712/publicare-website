@@ -3,13 +3,14 @@ import React, { ReactNode } from "react";
 
 interface IMainSectionProps {
   children: ReactNode;
+  color: string;
 }
 
-export default function MainSection({ children }: IMainSectionProps) {
+export default function MainSection({ children, color }: IMainSectionProps) {
   return (
     <Flex
       width={"100%"}
-      height={{ base: "auto", md: "100vh" }}
+      height={{ base: "auto", md: "100%" }}
       flexDir={"column"}
       py={{ md: 0, lg: 8 }}
       position="relative"
@@ -24,7 +25,7 @@ export default function MainSection({ children }: IMainSectionProps) {
         width="100%"
         height="80px"
         pointerEvents="none"
-        bgGradient="linear(to-b, transparent, var(--roxo-escuro))"
+        bgGradient={`linear(to-b, transparent, ${color})`}
         zIndex={2}
       />
       <Flex

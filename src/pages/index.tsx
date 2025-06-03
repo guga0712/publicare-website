@@ -11,7 +11,7 @@ import Footer from "../components/Footer";
 export default function Home() {
   return (
     <>
-      <MainSection>
+      <MainSection color="var(--roxo-escuro)">
         <NavBar />
         <Hero />
       </MainSection>

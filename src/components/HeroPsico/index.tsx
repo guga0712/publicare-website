@@ -1,5 +1,6 @@
-import { Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 import { TypeAnimation } from "react-type-animation";
+import Images from "../Images";
 
 export default function HeroPsico() {
   return (
@@ -16,11 +17,11 @@ export default function HeroPsico() {
         xl: `var(--margin-xlarge)`,
       }}
       py={20}
-      gap={{ base: 20, md: 0 }}
+      gap={{ base: 20, md: 10 }}
     >
       <Flex flexDir="column" gap={8} flex={1}>
         <Heading
-          fontSize="clamp(2rem, 3vw, 4.5rem)"
+          fontSize="clamp(1.5rem, 3vw, 4.5rem)"
           fontWeight="bold"
           lineHeight="1.2"
           textAlign={{ base: "center", md: "left" }}
@@ -62,12 +63,7 @@ export default function HeroPsico() {
           você.
         </Text>
       </Flex>
-      <Image
-        src="https://placehold.co/500x500"
-        alt="hero"
-        width={{ base: "100%", md: "500px" }}
-        height={{ base: "auto", md: "500px" }}
-      />
+      <Images src="/brain.png" />
     </Flex>
   );
 }

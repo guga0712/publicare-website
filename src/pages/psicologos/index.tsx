@@ -11,11 +11,10 @@ import FAQ from "../../components/FAQ";
 export default function Psicologos() {
   return (
     <>
-      <MainSection>
+      <MainSection color="var(--ciano)">
         <NavBar />
         <HeroPsico />
       </MainSection>
-      <SectionDivider src="/wave2.png" />
       <WhyPubliCarePsico />
       <SectionDivider src="/wave2.png" rotate="scaleY(-1)" />
       <HowItWorksPsico />

@@ -1,11 +1,12 @@
-import { Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
+import Images from "../Images";
 
 export default function Hero() {
   return (
     <Flex
       flexDir={{ base: "column", md: "row" }}
       overflow="hidden"
-      height="100%"
+      height={{ base: "auto", md: "80vh" }}
       width="100%"
       align="center"
       px={{
@@ -41,12 +42,7 @@ export default function Hero() {
           <Text as="span">a lidar com os desafios do dia a dia.</Text>
         </Text>
       </Flex>
-      <Image
-        src="https://placehold.co/500x500"
-        alt="hero"
-        width={{ base: "100%", md: "500px" }}
-        height={{ base: "auto", md: "500px" }}
-      />
+      <Images src="/brain.png" />
     </Flex>
   );
 }

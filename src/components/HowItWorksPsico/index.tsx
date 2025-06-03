@@ -1,19 +1,19 @@
 import {
   Flex,
   Heading,
-  Image,
   OrderedList,
   ListItem,
   UnorderedList,
 } from "@chakra-ui/react";
 import { Users } from "lucide-react";
 import Section from "../Section";
+import Images from "../Images";
 
 export default function HowItWorksPsico() {
   return (
     <Section color="var(--roxo-escuro)">
       <Flex
-        flexDir={{ base: "column-reverse", md: "row-reverse" }}
+        flexDir={{ base: "column", md: "row-reverse" }}
         overflow="hidden"
         height={{ base: "auto", md: "60vh" }}
         width="100%"
@@ -59,12 +59,7 @@ export default function HowItWorksPsico() {
             </ListItem>
           </OrderedList>
         </Flex>
-        <Image
-          src="https://placehold.co/500x500"
-          alt="Publicare"
-          width={{ base: "100%", md: "500px" }}
-          height={{ base: "auto", md: "500px" }}
-        />
+        <Images src="/user.png" />
       </Flex>
       <Flex
         flexDir={{ base: "column", md: "row" }}
@@ -78,7 +73,7 @@ export default function HowItWorksPsico() {
           lg: `var(--margin-large)`,
           xl: `var(--margin-xlarge)`,
         }}
-        py={12}
+        py={10}
         gap={{ base: 10, md: 20 }}
         justifyContent="space-between"
       >
@@ -111,12 +106,7 @@ export default function HowItWorksPsico() {
             </ListItem>
           </UnorderedList>
         </Flex>
-        <Image
-          src="https://placehold.co/500x500"
-          alt="Publicare"
-          width={{ base: "100%", md: "500px" }}
-          height={{ base: "auto", md: "500px" }}
-        />
+        <Images src="/join.png" />
       </Flex>
     </Section>
   );

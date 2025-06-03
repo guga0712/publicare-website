@@ -1,6 +1,7 @@
-import { Flex, Heading, Text, Image } from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 import { Users } from "lucide-react";
 import Section from "../Section";
+import Images from "../Images";
 
 export default function HowItWorks() {
   return (
@@ -50,12 +51,7 @@ export default function HowItWorks() {
             </Text>
           </Text>
         </Flex>
-        <Image
-          src="https://placehold.co/500x500"
-          alt="Publicare"
-          width={{ base: "100%", md: "500px" }}
-          height={{ base: "auto", md: "500px" }}
-        />
+        <Images src="/join.png" />
       </Flex>
     </Section>
   );

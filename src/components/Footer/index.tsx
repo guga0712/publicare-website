@@ -1,6 +1,6 @@
 import { Flex, Image, HStack, Box, Text, VStack } from "@chakra-ui/react";
-import { Facebook, Instagram, Youtube } from "lucide-react";
-import { FaApple, FaGooglePlay } from "react-icons/fa";
+import { Instagram } from "lucide-react";
+import { FaApple, FaGooglePlay, FaTiktok } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -23,14 +23,23 @@ export default function Footer() {
       <Flex flexDir="column" gap={8} align="center">
         <Image src="/logo-3.png" alt="Logo" width={120} />
         <HStack spacing={8}>
-          <Box backgroundColor="var(--roxo)" borderRadius="full" p={3}>
+          <Box
+            backgroundColor="var(--roxo)"
+            borderRadius="full"
+            p={3}
+            as="a"
+            href="https://www.instagram.com/publicare_"
+          >
             <Instagram size={24} color="white" />
           </Box>
-          <Box backgroundColor="var(--roxo)" borderRadius="full" p={3}>
-            <Facebook size={24} color="white" />
-          </Box>
-          <Box backgroundColor="var(--roxo)" borderRadius="full" p={3}>
-            <Youtube size={24} color="white" />
+          <Box
+            backgroundColor="var(--roxo)"
+            borderRadius="full"
+            p={3}
+            as="a"
+            href="https://www.tiktok.com/@publicare_"
+          >
+            <FaTiktok size={24} color="white" />
           </Box>
         </HStack>
         <Text color="var(--roxo)" as="strong">

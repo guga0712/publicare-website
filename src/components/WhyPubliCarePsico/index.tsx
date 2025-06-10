@@ -24,7 +24,7 @@ export default function WhyPubliCarePsico() {
         data-aos-delay="200"
       >
         <Heading as="h2" size="2xl" textAlign="center">
-          Por que escolher o PubliCare?
+          Por que escolher a PubliCare?
         </Heading>
         <Flex
           gap={4}

@@ -11,9 +11,8 @@ import {
   ModalCloseButton,
   ModalBody,
   useDisclosure,
-  ModalFooter,
 } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React from "react";
 
 interface PsychologistCardProps {
   name: string;

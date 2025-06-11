@@ -36,6 +36,7 @@ export default function FAQ() {
           allowMultiple
           width={{ base: "100%", md: "50%" }}
           border="none"
+          color="#fff"
         >
           <AccordionItem>
             <h2>

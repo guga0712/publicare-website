@@ -65,7 +65,7 @@ Se você sente que precisa de um tempo pra se cuidar e se reconectar com quem vo
             price={100}
             type="Online"
             crp="06/208253"
-            link="https://wa.me/5551992669137?text=Ol%C3%A1!%20%F0%9F%98%8A%20Encontrei%20seu%20perfil%20no%20site%20da%20PubliCare%20e%20gostaria%20de%20agendar%20minha%20primeira%20consulta%20%F0%9F%92%9C"
+            link="https://wa.me/5511979638863?text=Ol%C3%A1!%20%F0%9F%98%8A%20Encontrei%20seu%20perfil%20no%20site%20da%20PubliCare%20e%20gostaria%20de%20agendar%20minha%20primeira%20consulta%20%F0%9F%92%9C"
             description={
               "Olá! Sou psicóloga, atuo com acolhimento, escuta ativa e comprometimento com o desenvolvimento emocional e mental de cada paciente. Tenho experiência no atendimento a adolescentes, adultos e idosos, sempre com foco em promover o autoconhecimento, enfrentamento de dificuldades e construção de uma vida com mais equilíbrio e bem-estar."
             }
@@ -77,7 +77,7 @@ Se você sente que precisa de um tempo pra se cuidar e se reconectar com quem vo
             price={190}
             type="Online"
             crp="07/38282"
-            link="https://wa.me/5511979638863?text=Ol%C3%A1!%20%F0%9F%98%8A%20Encontrei%20seu%20perfil%20no%20site%20da%20PubliCare%20e%20gostaria%20de%20agendar%20minha%20primeira%20consulta%20%F0%9F%92%9C"
+            link="https://wa.me/5551992669137?text=Ol%C3%A1!%20%F0%9F%98%8A%20Encontrei%20seu%20perfil%20no%20site%20da%20PubliCare%20e%20gostaria%20de%20agendar%20minha%20primeira%20consulta%20%F0%9F%92%9C"
             description="Sou psicólogo clínico e atendo online pessoas a partir dos 16 anos. Minha prática tem foco em questões conjugais, familiares, de sexualidade, raça e etnia. Tenho especial interesse em compreender as histórias que moldam quem somos e como nos relacionamos. Já atuei em projetos com imigrantes haitianos e com pessoas LGBs de vivência cristã, sempre buscando ampliar escuta e cuidado em saúde mental.  Você me encontra no Instagram: @brayan_psico"
           />
         </Flex>

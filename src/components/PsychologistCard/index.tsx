@@ -38,7 +38,7 @@ export default function PsychologistCard({
 
   return (
     <Box
-      backgroundColor="var(--rosa-escuro)"
+      backgroundColor="#fff"
       borderRadius="2xl"
       p={4}
       display="flex"
@@ -59,22 +59,28 @@ export default function PsychologistCard({
           mr={4}
         />
         <Box>
-          <Text as="strong" fontSize={18} color="white">
+          <Text as="strong" fontSize={18} color="var(--rosa-escuro)">
             {name}
           </Text>
-          <Text fontSize={14} color="white" fontWeight="600">
+          <Text fontSize={14} color="var(--rosa-escuro)" fontWeight="600">
             Psicologia
           </Text>
-          <Text fontSize={14} color="white">
+          <Text fontSize={14} color="var(--rosa-escuro)">
             CRP: {crp}
           </Text>
         </Box>
       </Flex>
       <Flex flexDir="column" w="100%">
-        <Text fontSize={14} color="white">
-          <Text fontSize={14} color="white" fontWeight="bold" mb={2}>
-            {specialty}
-          </Text>
+        <Text
+          fontSize={14}
+          color="var(--rosa-escuro)"
+          fontWeight="bold"
+          mb={4}
+          mt={2}
+        >
+          {specialty}
+        </Text>
+        <Text fontSize={14} color="var(--rosa-escuro)">
           {description.split(" ").slice(0, 30).join(" ")}...
           {description.split(" ").length > 30 && (
             <Text
@@ -90,15 +96,15 @@ export default function PsychologistCard({
         </Text>
         <Flex
           justifyContent="space-between"
-          mt={2}
+          mt={4}
           borderTop="1px solid"
-          borderColor="#fff"
-          pt={2}
+          borderColor="var(--rosa-escuro)"
+          pt={4}
         >
-          <Text fontSize={14} fontWeight="bold">
+          <Text fontSize={14} fontWeight="bold" color="var(--rosa-escuro)">
             Sessão de 50 min
           </Text>
-          <Text fontSize={14} color="white" fontWeight="bold">
+          <Text fontSize={14} color="var(--rosa-escuro)" fontWeight="bold">
             R$ {price}
           </Text>
         </Flex>
@@ -106,8 +112,8 @@ export default function PsychologistCard({
 
       <Button
         width="full"
-        backgroundColor="white"
-        color="var(--rosa-escuro)"
+        backgroundColor="var(--rosa-escuro)"
+        color="#fff"
         borderRadius="full"
         _hover={{ backgroundColor: "none" }}
         _active={{ backgroundColor: "none" }}

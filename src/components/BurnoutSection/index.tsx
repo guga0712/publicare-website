@@ -1,5 +1,7 @@
-import { Button, Flex, Heading, Text } from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 import Section from "../Section";
+
+import PsychosComponent from "../PsychosComponent";
 
 export default function BurnoutSection() {
   return (
@@ -7,7 +9,7 @@ export default function BurnoutSection() {
       <Flex
         flexDir={{ base: "column" }}
         overflow="hidden"
-        height={{ base: "auto", md: "60vh" }}
+        height="auto"
         width="100%"
         align="center"
         px={{
@@ -17,31 +19,30 @@ export default function BurnoutSection() {
           xl: `var(--margin-xlarge)`,
         }}
         py={{ base: 36, md: 12 }}
-        gap={{ base: 8, md: 4 }}
+        gap={{ base: 8, md: 8 }}
         justifyContent="center"
-        textAlign="center"
         data-aos="fade-up"
         data-aos-delay="200"
       >
-        <Heading fontSize={{ base: 42, md: 72 }}>
-          Burnout não é briefing.
-        </Heading>
+        <Flex
+          flexDir="column"
+          gap={2}
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Heading fontSize={{ base: 42, md: 72 }}>
+            Burnout não é briefing.
+          </Heading>
+          <Text fontSize={20}>
+            Agende uma consulta com um psicólogo da PubliCare
+          </Text>
+        </Flex>
+
+        <PsychosComponent />
+
         <Text fontSize={20}>
           Cuide da sua mente com quem entende os desafios da área.
         </Text>
-        <Button
-          backgroundColor="white"
-          color="var(--rosa-escuro)"
-          borderRadius="full"
-          fontSize={{ base: 16, md: 25 }}
-          fontWeight="bold"
-          paddingX={{ base: 8, md: 12 }}
-          paddingY={{ base: 6, md: 8 }}
-          _hover={{ backgroundColor: "none" }}
-          _active={{ backgroundColor: "none" }}
-        >
-          AGENDE SUA CONSULTA AGORA
-        </Button>
       </Flex>
     </Section>
   );

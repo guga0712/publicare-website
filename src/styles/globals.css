@@ -32,8 +32,13 @@ body {
   padding: 0;
   margin: 0;
   font-family: Poppins !important;
+}
+
+h2, p{
   color: white;
 }
+
+
 
 a {
   color: inherit;

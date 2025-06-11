@@ -73,7 +73,7 @@ export default function Footer() {
           justifyContent="center"
           width={{ base: "100%", md: "200px" }}
         >
-          <FaApple size={32} />
+          <FaApple size={32} color="white" />
           <Flex flexDir="column" textAlign="left" lineHeight={1.2}>
             <Text fontSize="12px">Download on the</Text>
             <Text>App Store</Text>
@@ -89,7 +89,7 @@ export default function Footer() {
           justifyContent="center"
           width={{ base: "100%", md: "200px" }}
         >
-          <FaGooglePlay size={28} />
+          <FaGooglePlay size={28} color="white" />
           <Flex flexDir="column" textAlign="left" lineHeight={1.2}>
             <Text fontSize="12px">Download on the</Text>
             <Text>Play Store</Text>

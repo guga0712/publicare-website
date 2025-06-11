@@ -24,7 +24,7 @@ export default function CardWhy({ icon, description, delay }: CardWhyProps) {
       data-aos="fade-up"
       data-aos-delay={delay}
     >
-      {SelectedIcon && <SelectedIcon size={50} />}
+      {SelectedIcon && <SelectedIcon size={50} color="white" />}
       <Text fontWeight="500">{description}</Text>
     </Flex>
   );

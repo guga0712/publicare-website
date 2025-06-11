@@ -5,11 +5,11 @@ import HowItWorks from "../components/HowItWorks";
 import WhyPubliCare from "../components/WhyPubliCare";
 import SectionDivider from "../components/SectionDivider";
 import BurnoutSection from "../components/BurnoutSection";
-import RateUs from "../components/RateUs";
 import Footer from "../components/Footer";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Psychologists from "../components/Psychologists";
 
 export default function Home() {
   useEffect(() => {
@@ -28,7 +28,7 @@ export default function Home() {
       <SectionDivider src="/wave4.png" />
       <BurnoutSection />
       <SectionDivider src="/wave5.png" />
-      <RateUs />
+      <Psychologists />
       <SectionDivider src="/wave7.png" />
       <Footer />
     </>

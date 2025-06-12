@@ -22,8 +22,10 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from "@chakra-ui/icons";
+import { useRouter } from "next/router";
 
 export default function WithSubnavigation() {
+  const router = useRouter();
   const { isOpen, onToggle } = useDisclosure();
 
   return (
@@ -66,28 +68,43 @@ export default function WithSubnavigation() {
         {/* Menu Desktop */}
         <Flex display={{ base: "none", md: "flex" }} align="center" gap={6}>
           <DesktopNav />
-          <Button
-            fontSize="md"
-            h="36px"
-            w="150px"
-            fontWeight={600}
-            color="white"
-            backgroundColor="rgba(255, 255, 255, 0.3)"
-            borderRadius={8}
-          >
-            Login
-          </Button>
-          <Button
-            fontSize="md"
-            fontWeight={600}
-            h="36px"
-            w="150px"
-            color="var(--roxo)"
-            bg="white"
-            borderRadius={8}
-          >
-            Criar conta
-          </Button>
+          {router.pathname === "/" ? (
+            <Button
+              fontSize="md"
+              fontWeight={600}
+              h="36px"
+              w="200px"
+              color="var(--roxo)"
+              bg="white"
+              borderRadius={8}
+              onClick={() => {
+                window.open(
+                  "https://publicare-website.vercel.app/psicologos",
+                  "_self"
+                );
+              }}
+              _hover={{
+                backgroundColor: "#ece3ff",
+              }}
+            >
+              {"Sou Psicólogo(a)"}
+            </Button>
+          ) : (
+            <Button
+              fontSize="md"
+              fontWeight={600}
+              h="36px"
+              w="200px"
+              color="var(--roxo)"
+              bg="white"
+              borderRadius={8}
+              onClick={() => {
+                window.open("https://publicare-website.vercel.app/", "_self");
+              }}
+            >
+              {"Sou paciente"}
+            </Button>
+          )}
         </Flex>
       </Flex>
 
@@ -186,6 +203,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
 };
 
 const MobileNav = () => {
+  const router = useRouter();
   return (
     <Stack bg="transparent" p={4} display={{ md: "none" }} spacing={6}>
       {NAV_ITEMS.map((navItem) => (
@@ -194,28 +212,43 @@ const MobileNav = () => {
 
       {/* Botões Mobile */}
       <Stack spacing={4} pt={4}>
-        <Button
-          fontSize="md"
-          h="36px"
-          w="100%"
-          fontWeight={600}
-          color="white"
-          backgroundColor="rgba(255, 255, 255, 0.3)"
-          borderRadius={8}
-        >
-          Login
-        </Button>
-        <Button
-          fontSize="md"
-          h="36px"
-          w="100%"
-          fontWeight={600}
-          color="var(--roxo)"
-          bg="white"
-          borderRadius={8}
-        >
-          Criar conta
-        </Button>
+        {router.pathname === "/" ? (
+          <Button
+            fontSize="md"
+            fontWeight={600}
+            h="36px"
+            w="100%"
+            color="var(--roxo)"
+            bg="white"
+            borderRadius={8}
+            onClick={() => {
+              window.open(
+                "https://publicare-website.vercel.app/psicologos",
+                "_self"
+              );
+            }}
+            _hover={{
+              backgroundColor: "#ece3ff",
+            }}
+          >
+            {"Sou Psicólogo(a)"}
+          </Button>
+        ) : (
+          <Button
+            fontSize="md"
+            fontWeight={600}
+            h="36px"
+            w="200px"
+            color="var(--roxo)"
+            bg="white"
+            borderRadius={8}
+            onClick={() => {
+              window.open("https://publicare-website.vercel.app/", "_self");
+            }}
+          >
+            {"Sou paciente"}
+          </Button>
+        )}
       </Stack>
     </Stack>
   );

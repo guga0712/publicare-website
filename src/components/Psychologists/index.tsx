@@ -81,6 +81,26 @@ Se você sente que precisa de um tempo pra se cuidar e se reconectar com quem vo
             description="Sou psicólogo clínico e atendo online pessoas a partir dos 16 anos. Minha prática tem foco em questões conjugais, familiares, de sexualidade, raça e etnia. Tenho especial interesse em compreender as histórias que moldam quem somos e como nos relacionamos. Já atuei em projetos com imigrantes haitianos e com pessoas LGBs de vivência cristã, sempre buscando ampliar escuta e cuidado em saúde mental.  Você me encontra no Instagram: @brayan_psico"
           />
         </Flex>
+        <Flex flexDir={{ base: "column", md: "row" }} gap={4}>
+          <PsychologistCard
+            name="Bruna Pereira da Silva"
+            specialty="Terapia Cognitivo Comportamental"
+            image="/Bruna.jpeg"
+            price={190}
+            type="Online"
+            crp="05/68794"
+            link="https://wa.me/5521980651803?text=Ol%C3%A1!%20%F0%9F%98%8A%20Encontrei%20seu%20perfil%20no%20site%20da%20PubliCare%20e%20gostaria%20de%20agendar%20minha%20primeira%20consulta%20%F0%9F%92%9C"
+            description="Sou psicóloga especializada em Terapia Cognitivo-Comportamental (TCC) e acredito que todos nós temos dentro de nós a capacidade de ressignificar dores, transformar padrões e construir uma vida mais leve e verdadeira.
+
+Minha atuação é centrada na escuta acolhedora e no respeito à individualidade de cada pessoa. Embora minha base seja na TCC, integro diferentes abordagens de forma sensível e personalizada, sempre de acordo com o que você precisa no seu momento.
+
+Se você sente que está carregando algo difícil de lidar sozinho(a) — seja ansiedade, conflitos nos relacionamentos ou dúvidas sobre si —, saiba que há um caminho possível de mudança. E você não precisa trilhá-lo sem apoio.
+
+Vamos juntos construir esse espaço de cuidado, reflexão e transformação?
+
+Se quiser conhecer um pouco mais sobre meu trabalho, estou no Instagram: @psi.brunap"
+          />
+        </Flex>
       </Flex>
     </Section>
   );

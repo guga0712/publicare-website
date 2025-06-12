@@ -238,7 +238,7 @@ const MobileNav = () => {
             fontSize="md"
             fontWeight={600}
             h="36px"
-            w="200px"
+            w="100%"
             color="var(--roxo)"
             bg="white"
             borderRadius={8}

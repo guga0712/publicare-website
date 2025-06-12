@@ -72,6 +72,9 @@ export default function Footer() {
           alignItems="center"
           justifyContent="center"
           width={{ base: "100%", md: "200px" }}
+          onClick={() => {
+            alert("Em breve");
+          }}
         >
           <FaApple size={32} color="white" />
           <Flex flexDir="column" textAlign="left" lineHeight={1.2}>
@@ -88,6 +91,9 @@ export default function Footer() {
           alignItems="center"
           justifyContent="center"
           width={{ base: "100%", md: "200px" }}
+          onClick={() => {
+            alert("Em breve");
+          }}
         >
           <FaGooglePlay size={28} color="white" />
           <Flex flexDir="column" textAlign="left" lineHeight={1.2}>

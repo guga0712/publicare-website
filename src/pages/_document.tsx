@@ -15,7 +15,7 @@ export default function Document() {
           name="og:description"
           content="Conecte-se a psicólogos que já ajudaram publicitários como você a lidar com os desafios do dia a dia."
         />
-        <meta name="og:image" content="/logo-3.png" />
+        <meta name="og:image" content="/new-logos/horinzontal-roxa.png" />
         <meta name="og:url" content="https://publicare.com.br" />
         <meta name="og:type" content="website" />
         <meta name="og:locale" content="pt-BR" />

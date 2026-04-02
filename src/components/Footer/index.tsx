@@ -21,7 +21,7 @@ export default function Footer() {
       justifyContent="space-between"
     >
       <Flex flexDir="column" gap={8} align="center">
-        <Image src="/logo-3.png" alt="Logo" width={120} />
+        <Image src="/new-logos/horizontal-roxa.png" alt="Logo" width={120} />
         <HStack spacing={8}>
           <Box
             backgroundColor="var(--roxo)"

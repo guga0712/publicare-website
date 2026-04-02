@@ -45,7 +45,7 @@ export default function WithSubnavigation() {
       >
         {/* Logo */}
         <Flex align="center">
-          <Image src="/logo.png" alt="logo" width={120} />
+          <Image src="/new-logos/horizontal.png" alt="logo" width={120} />
         </Flex>
 
         {/* Menu Mobile */}
